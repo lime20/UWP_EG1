@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="buton.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:buton"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#151D34">
+
+    <Grid Width="1300" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="网格控件布局" Foreground="White"/>
+        <TextBlock Text="↑ ↓ ← → " Foreground="White" HorizontalAlignment="Right"/>
+        <StackPanel Height="1" HorizontalAlignment="Stretch" Background="#464D61" VerticalAlignment="Bottom"/>
+        <Grid Grid.Row="1" Margin="0,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Ab" FontSize="340" Foreground="white"/>
+            <StackPanel Width="1" Grid.Column="1" Margin="30,0" VerticalAlignment="Stretch" Background="#464D61"/>
+            <Grid Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Lorem ipsum" FontSize="20" Foreground="White"/>
+                <TextBlock Foreground="White" Grid.Row="1" FontSize="12" Margin="0,10,0,0" TextWrapping="Wrap" MaxWidth="257">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </TextBlock>
+            </Grid>
+
+            <StackPanel Width="1" Grid.Column="3" Margin="30,0" VerticalAlignment="Stretch" Background="#464D61"/>
+
+            <TextBlock Foreground="White" HorizontalAlignment="Left" FontSize="10" Grid.Column="4" VerticalAlignment="Top" TextWrapping="Wrap" MaxWidth="257">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </TextBlock>
+
+            <StackPanel Width="1" Grid.Column="5" Margin="30,0" VerticalAlignment="Stretch" Background="#464D61"/>
+
+            <TextBlock Foreground="White" FontSize="47" Grid.Column="6" VerticalAlignment="Top">
+                <Run Text="简单，"/>
+                <LineBreak/>
+                <Run Text="有效的"/>
+                <LineBreak/>
+                <Run Text="网格"/>
+                <LineBreak/>
+                <Run Text="排版术"/>
+            </TextBlock>
+
+            <TextBlock FontSize="20" Text="Universal Windows App" Grid.Column="4" Foreground="White" VerticalAlignment="Bottom"/>
+        </Grid>
+        <Grid Grid.Row="2" BorderBrush="#464D61" BorderThickness="0,1" Padding="0,30">
+            <TextBlock Text="UWPBOOK" FontSize="37" FontWeight="Bold" Foreground="#464D61"/>
+            <Grid HorizontalAlignment="Right">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Ellipse Fill="White"   Margin="0,0,30,0" Width="60" Height="60"/>
+                <Ellipse Fill="#377CDD" Margin="0,0,30,0" Width="60" Height="60" Grid.Column="1"/>
+                <Ellipse Fill="#89C4ED" Margin="0,0,30,0" Width="60" Height="60" Grid.Column="2"/>
+                <Ellipse Fill="#750D4A" Margin="0,0,30,0" Width="60" Height="60" Grid.Column="3"/>
+                <Ellipse Fill="#F3907D" Margin="0,0,30,0" Width="60" Height="60" Grid.Column="4"/>
+                <Ellipse Fill="#EFB915" Width="60" Height="60" Grid.Column="5"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3" Margin="0,30,0,0">
+            <TextBlock Text="Aa Bb Cc Dd Ee Ff Gg " VerticalAlignment="Center" FontWeight="Bold" FontSize="56" Foreground="White"/>
+            <TextBlock Text="0 1 2 3 4 5 6 7 8 9 " FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Foreground="White" HorizontalAlignment="Right"/>
+        </Grid>
+    </Grid>
+</Page>
+
